@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Button from "../../../../react-website-2/src/atom/button/Button";
+import Button from "../../atom/button/Button";
 import { Link } from 'react-router-dom';
 import {
     FaFacebook,
