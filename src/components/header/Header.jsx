@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 import { Link } from 'react-router-dom';
-import Button from "../../../../react-website-2/src/atom/button/Button";
+import Button from "../../atom/button/Button";
 
 const Header =({
    lightBg, topLine, lightText, lightTextDesc, headline, description, buttonLabel, img, alt,  imgStart }) => {
