@@ -1,0 +1,14 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+a,ul,li {text-decoration: none; outline: none;}
