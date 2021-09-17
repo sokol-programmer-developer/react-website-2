@@ -6,7 +6,7 @@ import { BsXDiamondFill } from 'react-icons/bs';
 import { GiCrystalize } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
 
-import Button from "../../../../react-website-2/src/atom/button/Button";
+import Button from "../../atom/button/Button";
 
 function Pricing() {
     return (
