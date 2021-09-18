@@ -2,23 +2,20 @@ import React from 'react';
 import './Header.css';
 
 import { Link } from 'react-router-dom';
-import Button from "../../../../react-website-2/src/atom/button/Button";
+import Button from "../../atom/button/Button";
 
 const Header =({
-   lightBg, topLine, lightText, lightTextDesc, headline, description, buttonLabel, img, alt,  imgStart }) => {
+   lightBg, topLine, lightText, lightTextDesc, headline, description, buttonLabel, img, alt,   }) => {
 
     return (
         <>
             <div
                 className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
             >
+
                 <div className='container'>
                     <div
                         className='row home__hero-row'
-                        style={{
-                            display: 'flex',
-                            flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
-                        }}
                     >
                         <div className='col'>
                             <div className='home__hero-text-wrapper'>
@@ -26,13 +23,7 @@ const Header =({
                                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                                     {headline}
                                 </h1>
-                                <p
-                                    className={
-                                        lightTextDesc
-                                            ? 'home__hero-subtitle'
-                                            : 'home__hero-subtitle dark'
-                                    }
-                                >
+                                <p className={ lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark' } >
                                     {description}
                                 </p>
                                 <Link to='/sign-up'>

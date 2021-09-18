@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Button from "../../../../react-website-2/src/atom/button/Button";
+import Button from "../../atom/button/Button";
 import { Link } from 'react-router-dom';
 import {
     FaFacebook,
@@ -30,8 +30,9 @@ function Footer() {
                             type='email'
                             placeholder='Your Email'
                         />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
+
                     </form>
+                    <Button buttonStyle='btn--outline footer-btn'>Subscribe</Button>
                 </div>
             </section>
             <div className='footer-links'>

@@ -12,6 +12,7 @@ function Services() {
         <Header {...homeObjOne} />
         <Header {...homeObjTwo} />
         <Header {...homeObjThree} />
+        <Pricing />
         <Header {...homeObjFour} />
     </>
   );

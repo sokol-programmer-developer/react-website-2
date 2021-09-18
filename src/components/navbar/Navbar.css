@@ -150,15 +150,18 @@ span {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 970px) {
 
     .navbar-mobile-states {
         display: grid;
+        width: 100vw;
+        z-index: 10;
         position: relative;
     }
 
     .nav-menu.active {
         display: grid;
+        width: 100vw;
     }
 
     .navbar-desktop-states {

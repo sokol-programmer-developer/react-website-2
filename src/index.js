@@ -11,7 +11,10 @@ ReactDOM.render(
       <Router>
           <Switch>
               <Route>
-                  <App />
+                  <div style={{ overflow:"hidden"}}>
+                      <App />
+                  </div>
+
               </Route>
           </Switch>
       </Router>

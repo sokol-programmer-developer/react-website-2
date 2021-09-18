@@ -30,7 +30,7 @@ export const SidebarData = [
     },
     {
         id: 8,
-        title: "Sign_Up",
+        title: "SignUp",
         path: "/sign-up",
         icon: <FaIcons.FaCartPlus/>,
         cName: "nav-text",
