@@ -1,22 +1,45 @@
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a,ul,li{ outline: none;  text-decoration: none;}
+
+.react-icons,
+.navbar,
+.navbar-desktop-states,
+.nav-default-item,
+.navbar-logo,
+.navbar-default-icon,
+.navbar-mobile-icon,
+.navbar-logo-h2,
+.menu-bars,
+.menu-bars:active,
+.nav-menu,
+.nav-menu.active,
+.nav-text,
+.nav-text a,
+.nav-menu-items,
+.navbar-toggle,
+span{
+    display: grid;
+    position: relative;
     align-content: center;
     align-items: center;
     justify-content: center;
     justify-items: center;
     text-align: center;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+
 }
 
-a,ul,li {text-decoration: none; outline: none;}
-
-
-
-
-
+.react-icons{
+    width: 3vw;
+    height: 3vh;
+}
 
 .navbar {
     background-color: #060b26;
@@ -68,6 +91,25 @@ a,ul,li {text-decoration: none; outline: none;}
     color: white;
 }
 
+.nav-text {
+    list-style: none;
+    width: 15vw;
+    height: 5vh;
+}
+
+.nav-text a {
+    grid-template-columns: repeat(2,1fr);
+    text-decoration: none;
+    color: #f5f5f5;
+    width: 13vw;
+    height:5vh;
+    padding: 0 4vw;
+    border-radius: 1vh;
+}
+
+.nav-text a:hover {
+    background-color: #1a83ff;
+}
 
 .navbar-mobile-states{
     display: none;
@@ -77,77 +119,10 @@ a,ul,li {text-decoration: none; outline: none;}
     display: none;
 }
 
-
-
-.menu-bars {
-    margin-left: 2rem;
-    font-size: 2rem;
-    background: none;
-    color: green;
-}
-
-.menu-bars:active{
-   color: gold;
-}
-
-.nav-menu {
-    background-color: #060b26;
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    transition: 850ms;
-}
-
-.nav-menu.active {
-    left: 0;
-    transition: 350ms;
-}
-
-.nav-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 8px 0 8px 16px;
-    list-style: none;
-    height: 60px;
-}
-
-.nav-text a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
-}
-
-.nav-text a:hover {
-    background-color: #1a83ff;
-}
-
-.nav-menu-items {
-    width: 100%;
-}
-
-.navbar-toggle {
-    background-color: #060b26;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
 span {
-    margin-left: 16px;
+    margin-left: 1.5vw;
 }
+
 
 
 @media screen and (max-width: 970px) {
@@ -155,13 +130,89 @@ span {
     .navbar-mobile-states {
         display: grid;
         width: 100vw;
-        z-index: 10;
+        height: 10vh;
+        top: 0;
+        z-index: 15;
         position: relative;
+
+    }
+
+    .navbar-toggle {
+        background-color: #060b26;
+        width: 100vw;
+        height: 10vh;
+        top: 0;
+        z-index: 16;
+    }
+
+    .nav-menu {
+        background-color: #060b26;
+        width: 100vw;
+        height: 100vh;
+        top: 40vh;
+        left: -100vw;
+        transition: 850ms;
+        z-index: 10;
     }
 
     .nav-menu.active {
         display: grid;
         width: 100vw;
+        transition: 350ms;
+        left: 0;
+    }
+
+    .nav-menu-items {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .navbar-toggle {
+        background-color: #060b26;
+        width: 100vw;
+    }
+
+    .nav-text {
+        list-style: none;
+        width: 40vw;
+        height:15vh;
+    }
+
+    .nav-text a {
+        grid-template-columns: repeat(2,1fr);
+        text-decoration: none;
+        color: #f5f5f5;
+        width: 40vw;
+        height:15vh;
+        padding: 0 4vw;
+        border-radius: 1vh;
+    }
+
+    .nav-text a:hover {
+        background-color: #1a83ff;
+    }
+
+    .navbar-mobile-icon{
+        bottom: 60vh;
+        color: #fff;
+    }
+    .react-icons{
+        width: 7vw;
+        height: 7vh;
+    }
+
+    .menu-bars {
+        width: 10vw;
+        height: 10vh;
+        color: #fff;
+        transition: all 0.15s linear;
+        top: 50vh;
+        z-index: 8;
+    }
+
+    .menu-bars:active{
+        color: #1a83ff;
+        transition: all 0.1s linear;
     }
 
     .navbar-desktop-states {

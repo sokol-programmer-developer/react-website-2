@@ -1,6 +1,7 @@
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as FaIcons from "react-icons/fa";
+import * as GoIcons from "react-icons/go";
 import React from "react";
 
 
@@ -29,9 +30,9 @@ export const NavbarData = [
 
     {
         id: 4,
-        title: "Sign_Up",
+        title: "SignUp",
         path: "/sign-up",
-        icon: <FaIcons.FaCartPlus/>,
+        icon: <GoIcons.GoPerson/>,
         cName: "nav-text",
     },
 ]

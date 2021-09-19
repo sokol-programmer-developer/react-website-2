@@ -4,8 +4,10 @@ import * as FaIcons from "react-icons/fa"
 import * as AiIcons from "react-icons/ai"
 import * as MdIcons from "react-icons/md"
 
+
 import {SidebarData} from "./SidebarData";
 import {NavbarData} from "./NavbarData";
+import { IconContext } from "react-icons";
 
 import './Navbar.css';
 
@@ -17,6 +19,7 @@ const Navbar = () => {
     const closeMobileMenu = () => setSidebar(false);
     return (
         <>
+            <IconContext.Provider value={{ className: 'react-icons' }}>
             <div className="navbar">
                 <div className="navbar-desktop-states">
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
@@ -49,7 +52,7 @@ const Navbar = () => {
                         <ul className="nav-menu-items">
                             <li className="navbar-toggle">
                                 <Link to="#" className="menu-bars">
-                                    <AiIcons.AiOutlineClose onClick={showSidebar}/>
+                                    <AiIcons.AiOutlineClose  className='navbar-mobile-icon' onClick={showSidebar}/>
                                 </Link>
                             </li>
                             {SidebarData.map(({id, cName, path, icon, title}) => {
@@ -67,6 +70,7 @@ const Navbar = () => {
                     </nav>
                 </div>
             </div>
+            </IconContext.Provider>
         </>
     );
 }

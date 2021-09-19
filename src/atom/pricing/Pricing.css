@@ -62,15 +62,18 @@ a,ul,li{ outline: none;  text-decoration: none;}
     grid-template-columns: repeat(3,1fr);
     width: 100vw;
     height: 65vh;
+
 }
 
+.pricing__section-card,
 .pricing__container-card {
     background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
     width: 25vw;
-    height: 60vh;
+    height: 55vh;
     text-decoration: none;
     border-radius: 1vh;
+    transition: all 0.3s ease-out;
 }
 
 .cart-2 {
@@ -78,13 +81,12 @@ a,ul,li{ outline: none;  text-decoration: none;}
     background: #242424;
     margin: 0 1vh;
 }
-
+.pricing__section-card:hover,
 .pricing__container-card:hover {
     transform: scale(1.06);
     transition: all 0.3s ease-out;
     color: #1c2237;
 }
-
 
 .pricing__container-cardInfo {
     grid-template-rows: repeat(6,1fr);
@@ -155,22 +157,19 @@ a,ul,li{ outline: none;  text-decoration: none;}
 
     .pricing__container{
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 5vh;
-
+        grid-gap: 6vh;
         width: 100vw;
         height: 135vh;
     }
-
+     .pricing__section-card,
     .pricing__container-card {
         background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
         box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
         width: 35vw;
-        height: 60vh;
+        height: 55vh;
         text-decoration: none;
         border-radius: 1vh;
     }
-
-
 
     .cart-2 {
         transform: scale(1.05);
@@ -223,8 +222,6 @@ a,ul,li{ outline: none;  text-decoration: none;}
 
 
 @media only screen and (min-width: 320px) and (max-width: 700px) {
-
-
     .pricing__section {
         background: #fafafa;
         width: 100vw;
@@ -249,17 +246,15 @@ a,ul,li{ outline: none;  text-decoration: none;}
         font-size: 5vh;
     }
 
-
     .pricing__container{
 
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3,1fr);
-        grid-gap: 5vh;
+        grid-row-gap: 7vh;
 
         width: 100vw;
         height: 135vh;
     }
-
 
     .pricing__section-card{
         background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
@@ -269,8 +264,6 @@ a,ul,li{ outline: none;  text-decoration: none;}
         text-decoration: none;
         border-radius: 1vh;
     }
-
-
 
     .cart-2{
         width: 70vw;
@@ -286,8 +279,6 @@ a,ul,li{ outline: none;  text-decoration: none;}
         transition: all 0.3s ease-out;
         color: #1c2237;
     }
-
-
 
     .pricing__container-cardInfo {
         grid-template-rows: repeat(6,1fr);

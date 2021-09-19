@@ -3,8 +3,7 @@ import React from "react";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as FaIcons from "react-icons/fa";
-
-
+import * as GoIcons from "react-icons/go";
 
 export const SidebarData = [
     {
@@ -32,7 +31,7 @@ export const SidebarData = [
         id: 8,
         title: "SignUp",
         path: "/sign-up",
-        icon: <FaIcons.FaCartPlus/>,
+        icon: <GoIcons.GoPerson/>,
         cName: "nav-text",
     },
 
